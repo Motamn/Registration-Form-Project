@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>مشروع استمارة التسجيل</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body dir="rtl">
+        <h1>استمارة التسجيل</h1>
+        <h2><a href="../index.html">English</a></h2>
+        <p>يرجى ملء هذا النموذج بالمعلومات المطلوبة</p>
+        <form>
+            <fieldset>
+                <label
+                    >أدخل اسمك الأول: 
+                    <input type="text" name="first-name" required
+                /></label>
+                <label
+                    >أدخل اسمك الأخير: 
+                    <input type="text" name="last-name" required
+                /></label>
+                <label
+                    >أدخل بريدك الألكتروني:
+                    <input type="email" name="email" required
+                /></label>
+                <label
+                    >أدخل كلمة السر:
+                    <input
+                        type="password"
+                        name="password"
+                        pattern="[a-z0-9]{8,}"
+                        required
+                /></label>
+            </fieldset>
+            <fieldset>
+                <label
+                    ><input type="radio" name="account-type" class="inline" />
+                    حساب خاص</label
+                >
+                <label
+                    ><input type="radio" name="account-type" class="inline" />
+                    حساب تجاري</label
+                >
+                <label>
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        class="inline"
+                        required
+                    />
+                    أوافق على
+                    <a
+                        href="https://google.com"
+                        > الشروط والأحكام</a
+                    >
+                </label>
+            </fieldset>
+            <fieldset>
+                <label
+                    >ارفع صورة للحساب: <input type="file" name="file"
+                /></label>
+                <label
+                    >أدخل عمرك (بالسنوات):
+                    <input type="number" name="age" min="13" max="120" />
+                </label>
+                <label
+                    >كيف سمعت عنا؟
+                    <select name="referrer">
+                        <option value="">(اختر واحدة)</option>
+                        <option value="1">مؤتمن 😉</option>
+                        <option value="2">اليوتيوب</option>
+                        <option value="3">الفيسبوك</option>
+                        <option value="4">اخرى</option>
+                    </select>
+                </label>
+                <label
+                    >الوصف:
+                    <textarea
+                        name="bio"
+                        rows="3"
+                        cols="30"
+                        placeholder="أحب البرمجة على الشاطئ..."
+                    ></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="موافق" />
+        </form>
+    </body>
+</html>
